@@ -1,38 +1,47 @@
-# PRINCÍPIOS S.O.L.I.D
+# Princípios SOLID
 
-## Benefícios do uso em software:
-- seja fácil de se manter e se ajustar às alterações de escopo;
-- seja testável e de fácil entendimento;
-- seja extensível para alterações com o menor esforço necessário;
-- forneça o máximo de reaproveitamento;
-- permaneça o máximo de tempo possível em utilização;
+SOLID é um acrônico para cinco princípios de design de código que podem ser aplicados a qualquer linguagem que suporte o paradigma de programação orientada à objetos.
 
-## Evitando problemas como:
-- dificuldade na testabilidade / criação de testes unitários;
-- código macarrônico, sem estrutura ou padrão;
-- dificuldades em isolar funcionalidades;
-- duplicação de código, uma alteração precisa ser feitta em N pontos;
-- fragilidade, o código quebra facilmente em vários pontos após mudança;
+## Benefícios
 
-### **Single responsability principle** _Princípio da responsabilidade única_
-- uma classe, método, arquivo deve ter apenas uma única responsabilidade/razão para existir;
-- classes que seguem este princípio tendem a ser mais reutilizáveis, mais simples de se entender, propagam menos mudanças para o resto do sistema, etc;
+Os benefícios do uso na prática tornam o software mais fácil de manter, reduzindo acoplamentos, possibilitando extensão e estimulando o reaproveitamento de código.
 
-### **Open/closed principle** _Princípio aberto/fechado_
-- entidades de softwares (classes, módulos, métodos, etc) devem estar abertas para extensão, mas fechadas para modificação;
-- impõe o uso de abstrações e polimorfismo de forma consciente, tornando software mais flexível;
-- não deve ser necessário abrir a própria classe para realizar mudanças, a criação de novas classes que extendem o comportamento é o que deve ser feito;
+Evita as dificuldades para manter a qualidade do código por meio de testes, possibilitando uma estrutura mais padronizada e de fácil entendimento. Facilita o isolamento de funcionalidades da mesma maneira que evita códigos duplicados e frágeis a qualquer mudança.
 
-### **Liskov substitution principle** _Princípio de substituição de Liskov_
-- classes derivadas devem por ser substituídas por suas classes base;
-- herança deve ser utilizada com cuidado, evitando _Gato_ _extends_ _Cachorro_ apenas por possuírem algo em comum; 
+## Princípio da responsabilidade única
 
-### **Interface segregation principle** _Princípio da segregação de interfaces_
-- classes não devem ser forçados a depender de métodos que não usam;
-- muitas interfaces são melhores que uma interface única;
-- evita que classes clientes precisem implementar métodos desnecessários causando um alto acoplamento e baixa coesão;
+**Single responsability principle**
 
-### **Dependency inversion principle** _Princípio da inversão de dependência_
-- módulos de alto nível não devem depender de módulos de baixo nível, ambos devem depender de abstrações;
-- abstrações não devem depender de detalhes, detalhes é que devem depender de abstrações;
-- dependa de uma abstração e não de uma implementação;
+- Uma classe, método, arquivo deve ter apenas uma única responsabilidade/razão para existir
+- Classes que seguem este princípio tendem a ser mais reutilizáveis, mais simples de se entender, propagam menos mudanças para o resto do software
+
+## Princípio aberto/fechado
+
+**Open/closed principle** 
+
+- Entidades de softwares (classes, módulos, métodos, etc) devem estar abertas para extensão, mas fechadas para modificação
+- Impõe o uso de abstrações e polimorfismo de forma consciente, tornando software mais flexível
+- Não deve ser necessário abrir a própria classe para realizar mudanças, a criação de novas classes que extendem o comportamento é o que deve ser feito
+
+## Princípio de substituição de Liskov
+
+**Liskov substitution principle**
+
+- Classes derivadas devem por ser substituídas por suas classes base
+- Herança deve ser utilizada com cuidado, evitando "Gato extends Cachorro" apenas por possuírem algo em comum
+
+## Princípio da segregação de interfaces
+
+**Interface segregation principle**
+
+- Classes não devem ser forçados a depender de métodos que não usam
+- Muitas interfaces são melhores que uma interface única
+- Evita que classes clientes precisem implementar métodos desnecessários causando um alto acoplamento e baixa coesão
+
+## Princípio da inversão de dependência
+
+**Dependency inversion principle** 
+
+- Módulos de alto nível não devem depender de módulos de baixo nível, ambos devem depender de abstrações
+- Abstrações não devem depender de detalhes, detalhes é que devem depender de abstrações
+- Dependa de uma abstração e não de uma implementação
